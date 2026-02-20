@@ -1,0 +1,27 @@
+---
+layout: default
+
+title: Welcome to DjangoCon US 2027
+---
+
+
+{% block nav %}{% endblock %}
+{% if site.phase == "landing" %}
+  {% comment %}
+    The conference site is not ready
+  {% endcomment %}
+
+  {% include 'home/landing-conf-home.html' %}
+{% elsif site.phase == "archived" %}
+  {% comment %}
+    The conference is over
+  {% endcomment %}
+
+  {% include 'home/archived-conf-home.html' %}
+{% else %}
+  {% comment %}
+    The conference site is fully live
+  {% endcomment %}
+
+  {% include 'home/active-conf-home.html' %}
+{% endif %}

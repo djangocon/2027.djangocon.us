@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="{{ site.domain }}{{ page.url }}" />
+  <meta name="author" content="DjangoCon US" />
+  <meta name="description" content="{% if description %}{{ description }}{% else %}DjangoCon US {{ site.conf_year }} is a five-day Python and Django conference.{% endif %}" />
+
+  <meta property="og:title" content="{% if title %}{{ title }} | {% endif %}DjangoCon US {{ site.conf_year }}" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:description" content="{% if description %}{{ description }}{% else %}DjangoCon US {{ site.conf_year }} is a five-day Python and Django conference.{% endif %}" />
+  <meta property="og:url" content="{{ site.domain }}{{ page.url }}" />
+  <meta property="og:site_name" content="DjangoCon US" />
+
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  {% block social_images %}
+    <meta property="og:image" content="{{ site.domain }}/assets/img/social/og-share.jpg" />
+    <meta property="twitter:image" content="{{ site.domain }}/assets/img/social/share.png" />
+  {% endblock %}
+
+  <meta property="twitter:title" content="{% if title %}{{ title }} | {% endif %}DjangoCon US {{ site.conf_year }}" />
+  <meta name="twitter:site" content="@djangocon" />
+
+  <meta property="fb:app_id" content="280981518972848" />
+  <meta name="google-site-verification" content="fkIplA0HzMWPz64TqaW1xp4RH5JfDyRekV3QO_MqJ8Q" />
+
+  <link href="/assets/favicons/favicon.ico" rel=icon type="image/x-icon">
+  <link href="/assets/favicons/favicon.png" rel=icon type="image/png">
+  <link href="/assets/favicons/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+
+  <title>{% if title %}{{ title }} | {% endif %}DjangoCon US {{ site.conf_year }}</title>
+
+  {% comment %}
+    THEME-X - Adjust fonts to theme
+  {% endcomment %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+{% assign current_phase = preview_phase | default: site.phase %}
+<body id="SiteBody" class="{% if current_phase == 'landing' %}flex flex-col min-h-screen{% endif %}{% if templateClass %} {{ templateClass }}{% endif %}">
+  {% unless custom_header %}
+    {% include "header.html" %}
+  {% endunless %}
+  <main id="SiteMain" class="flex-1 lg:block">
+    {%- block content -%}
+      {{- content -}}
+    {%- endblock -%}
+  </main>
+
+  {% if current_phase != "landing" %}
+    <img src="/assets/img/theme/city.svg" alt="The city skyline" aria-hidden="true" class="mt-16 -mb-[4vw]"/>
+  {% endif %}
+  <footer id="SiteFooter" class="py-20 bg-white border-t-4 border-black">
+    <div class="container mx-auto ">
+      <div class="grid gap-8 px-4 place-items-center">
+        {% include "conf-social-share.html" %}
+
+        <p class="text-center lg:text-xl">
+          <strong>
+            Got questions? We can help:
+            <a
+              href="mailto:{{site.contact_us_email}}" class="link">{{site.contact_us_email}}</a>
+          </strong>
+        </p>
+        <small class="text-sm text-center">
+          &copy; {{ site.conf_year }} DjangoCon US
+          · Design by <a href="https://yupgup.com/" class="link" target="_blank">YupGup</a>
+          · Presented by <a href="https://www.defna.org/" class="link" target="_blank">DEFNA</a>
+          {% if current_phase != "landing" %}· <a href="/styleguide/">Styleguide</a>{% endif %}
+          {%- comment -%}· <a href="/colophon/" class="link">Colophon</a>{%- endcomment -%}
+        </small>
+      </div>
+    </div>
+  </footer>
+
+  {%- comment -%}
+    Social icons added as sprite
+  {%- endcomment -%}
+  {%- include 'svg-social-icons.html' -%}
+
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/iframe_compat.js"></script>
+</body>
+</html>

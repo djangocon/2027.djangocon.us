@@ -1,0 +1,34 @@
+
+<div class="flex items-center justify-center flex-1 bg-repeat bg-lines">
+  <div class="wrapper narrow py-16">
+    <div class="space-y-8 text-center">
+      <h1 class="mb-4 text-4xl font-extrabold leading-tight lg:text-6xl">
+        Coming Fall {{ site.conf_year }}
+      </h1>
+
+      <p class="text-xl lg:text-2xl">
+        More details coming soon. Join our mailing list to be the first to know!
+      </p>
+
+      {% if site.mailing_list != "" %}
+      <p>
+        <a
+          href="{{ site.mailing_list }}"
+          class="button bg-blue">Join Our Mailing List</a>
+      </p>
+      {% endif %}
+
+      <div class="flex flex-wrap justify-center gap-6 pt-4">
+        {% if site.social.mastodon != "" %}
+          <a href="{{ site.social.mastodon }}" class="link">Mastodon</a>
+        {% endif %}
+        {% if site.social.bluesky != "" %}
+          <a href="{{ site.social.bluesky }}" class="link">Bluesky</a>
+        {% endif %}
+        {% if site.social.twitter != "" %}
+          <a href="{{ site.social.twitter }}" class="link">X/Twitter</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
