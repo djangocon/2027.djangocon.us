@@ -1,4 +1,6 @@
-# DjangoCon.us Conference Website
+# DjangoCon US 2027 Conference Website
+
+The website for DjangoCon US 2027, built with [Eleventy](https://www.11ty.dev/) and [TailwindCSS](https://tailwindcss.com/).
 
 ## Installation
 
@@ -21,18 +23,23 @@ This opens a local server at `http://localhost:8080/` and watches for changes to
 
 ## Conference Phases
 
-The conference can be in 3 separate phases, controlled under `site.json`:
+The conference goes through 3 phases, controlled by `phase` in `src/_data/site.json`:
 
-* `landing`: The conference site consists of a landing page.
-* `active`: The conference site is live and registration may occur.
-* `archived`: The conference is over.
+* `landing`: A "Coming Soon" page with the logo, mailing list signup, and social links. Nav is hidden.
+* `active`: The full conference site with schedule, speakers, tickets, and all content.
+* `archived`: Post-conference recap with talk videos, photos, and highlights.
 
-This impacts the rendering of the homepage and display of content in various locations.
+You can preview any phase without changing `site.json` by visiting the draft preview pages:
+
+* `/preview/landing/`
+* `/preview/active/`
+* `/preview/archived/`
 
 Reference:
 
 * `src/index.html`
 * `src/_includes/home/`
+* `src/_includes/header.html`
 
 ## Date Formatting
 
@@ -46,6 +53,13 @@ Dates are formatted with [date-fns](https://date-fns.org/), due to some wonkines
 
 1. Presenter images are created at `/presenters/{{ slug }}/`
 2. Session images are created at `/{{ talks,tutorials }}/{{ slug }}/social/`
+
+## Schedule Tools
+
+Python tools for processing schedules and generating content live in `tools/`. Requires a Python virtualenv with dependencies from `tools/requirements.txt`.
+
+* `python tools/process.py` - Main CLI for generating schedules and placeholders
+* `python tools/swap_talks.py` - Swap two talks in the schedule
 
 ## Considerations when updating content
 
