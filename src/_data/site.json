@@ -1,6 +1,6 @@
 {
   "domain": "https://2027.djangocon.us",
-  "timezone": "America/New_York",
+  "timezone": "America/Los_Angeles",
   "conf_year": 2027,
   "phase": "landing",
   "banner": false,
