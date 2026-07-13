@@ -4,29 +4,29 @@ PRODID:-//DjangoCon US 2027//Schedule//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:DjangoCon US 2027
-X-WR-TIMEZONE:America/New_York
+X-WR-TIMEZONE:America/Los_Angeles
 X-WR-CALDESC:DjangoCon US 2027 Conference Schedule
 BEGIN:VTIMEZONE
-TZID:America/New_York
+TZID:America/Los_Angeles
 BEGIN:DAYLIGHT
-TZOFFSETFROM:-0500
-TZOFFSETTO:-0400
-TZNAME:EDT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
 DTSTART:19700308T020000
 RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
 END:DAYLIGHT
 BEGIN:STANDARD
-TZOFFSETFROM:-0400
-TZOFFSETTO:-0500
-TZNAME:EST
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
 DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T083000
-DTEND;TZID=America/New_York:20240923T090000
-DTSTAMP:20240923T083000Z
+DTSTART;TZID=America/Los_Angeles:20240923T053000
+DTEND;TZID=America/Los_Angeles:20240923T060000
+DTSTAMP:20240923T053000Z
 UID:orientation@https://2027.djangocon.us
 SUMMARY:Orientation
 LOCATION:Junior Ballroom
@@ -35,9 +35,9 @@ URL:https://2027.djangocon.us/talks/orientation/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T090000
-DTEND;TZID=America/New_York:20240923T091500
-DTSTAMP:20240923T090000Z
+DTSTART;TZID=America/Los_Angeles:20240923T060000
+DTEND;TZID=America/Los_Angeles:20240923T061500
+DTSTAMP:20240923T060000Z
 UID:opening-remarks-monday@https://2027.djangocon.us
 SUMMARY:Opening Remarks (Monday)
 LOCATION:Junior Ballroom
@@ -46,23 +46,23 @@ URL:https://2027.djangocon.us/talks/opening-remarks-monday/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T091500
-DTEND;TZID=America/New_York:20240923T100000
-DTSTAMP:20240923T091500Z
+DTSTART;TZID=America/Los_Angeles:20240923T061500
+DTEND;TZID=America/Los_Angeles:20240923T070000
+DTSTAMP:20240923T061500Z
 UID:keynote-sheena-oconnell@https://2027.djangocon.us
 SUMMARY:Keynote - Power to the People who Teach the People
 LOCATION:Junior Ballroom
-DESCRIPTION:Presenter: Sheena O'Connell\n\nOne thing I absolutely love about the Python community is the fact that there are so many people with teacher's hearts. Teaching is an amazing thing, you can change a person's life just by spending some time with them, having conversations, showing them stuff.
- It's normal for people with software development skills to take on teaching roles - this might be through formal or informal workplace mentorship, community involvement, through being hired to teach or any number of other situations. Teaching and sharing knowledge is often a part of the job.
- Software development and teaching are two distinct skill sets. There is a science to teaching and learning - there is a robust body of knowledge, there are techniques, mindsets and patterns that make teaching effective. And, on the flip side, there are mistakes, anti-patterns and myths that are very much worth avoiding.
- It's perfectly normal for software developers to take on teaching roles and responsibilities, but it's exceedingly rar...
+DESCRIPTION:Presenter: Sheena O'Connell\n\nOne thing I absolutely love about the Python community is the fact that there are so many people with teacher's hearts. Teaching is an amazing thing, you can change a person's life just by spending some time with them, having conversations, showing them stuff. 
+ It's normal for people with software development skills to take on teaching roles - this might be through formal or informal workplace mentorship, community involvement, through being hired to teach or any number of other situations. Teaching and sharing knowledge is often a part of the job.  
+ Software development and teaching are two distinct skill sets. There is a science to teaching and learning - there is a robust body of knowledge, there are techniques, mindsets and patterns that make teaching effective. And, on the flip side, there are mistakes, anti-patterns and myths that are very much worth avoiding.  
+ It's perfectly normal for software developers to take on teaching roles and responsibilities, but it's exceedingl...
 URL:https://2027.djangocon.us/talks/keynote-monday/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T101000
-DTEND;TZID=America/New_York:20240923T103500
-DTSTAMP:20240923T101000Z
+DTSTART;TZID=America/Los_Angeles:20240923T071000
+DTEND;TZID=America/Los_Angeles:20240923T073500
+DTSTAMP:20240923T071000Z
 UID:the-magic-of-dependencies-installing-themselves@https://2027.djangocon.us
 SUMMARY:The Magic of Dependencies Installing Themselves
 LOCATION:Online talks
@@ -73,9 +73,9 @@ URL:https://2027.djangocon.us/talks/the-magic-of-dependencies-installing-themsel
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T104000
-DTEND;TZID=America/New_York:20240923T112500
-DTSTAMP:20240923T104000Z
+DTSTART;TZID=America/Los_Angeles:20240923T074000
+DTEND;TZID=America/Los_Angeles:20240923T082500
+DTSTAMP:20240923T074000Z
 UID:choosing-wisely-spa-vs-htmx-for-your-next-web-project@https://2027.djangocon.us
 SUMMARY:Choosing Wisely: SPA vs. HTMX for Your Next Web Project
 LOCATION:Junior Ballroom
@@ -90,9 +90,9 @@ URL:https://2027.djangocon.us/talks/choosing-wisely-spa-vs-htmx-for-your-next-we
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T104000
-DTEND;TZID=America/New_York:20240923T112500
-DTSTAMP:20240923T104000Z
+DTSTART;TZID=America/Los_Angeles:20240923T074000
+DTEND;TZID=America/Los_Angeles:20240923T082500
+DTSTAMP:20240923T074000Z
 UID:path-user-user-username-user-view-profile@https://2027.djangocon.us
 SUMMARY:path('/user/&lt;user.username:user&gt;/', view_profile)
 LOCATION:Grand Ballroom III
@@ -103,9 +103,9 @@ URL:https://2027.djangocon.us/talks/path-user-user-username-user-view-profile/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T113000
-DTEND;TZID=America/New_York:20240923T115500
-DTSTAMP:20240923T113000Z
+DTSTART;TZID=America/Los_Angeles:20240923T083000
+DTEND;TZID=America/Los_Angeles:20240923T085500
+DTSTAMP:20240923T083000Z
 UID:django-ledger-uniting-developers-and-accountants-for-innovation@https://2027.djangocon.us
 SUMMARY:Django Ledger | Uniting Developers and Accountants for Innovation.
 LOCATION:Grand Ballroom III
@@ -118,9 +118,9 @@ URL:https://2027.djangocon.us/talks/django-ledger-uniting-developers-and-account
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T113000
-DTEND;TZID=America/New_York:20240923T115500
-DTSTAMP:20240923T113000Z
+DTSTART;TZID=America/Los_Angeles:20240923T083000
+DTEND;TZID=America/Los_Angeles:20240923T085500
+DTSTAMP:20240923T083000Z
 UID:error-culture@https://2027.djangocon.us
 SUMMARY:Error Culture
 LOCATION:Junior Ballroom
@@ -130,9 +130,9 @@ URL:https://2027.djangocon.us/talks/error-culture/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T120000
-DTEND;TZID=America/New_York:20240923T125000
-DTSTAMP:20240923T120000Z
+DTSTART;TZID=America/Los_Angeles:20240923T090000
+DTEND;TZID=America/Los_Angeles:20240923T095000
+DTSTAMP:20240923T090000Z
 UID:lightning-talks-monday@https://2027.djangocon.us
 SUMMARY:Lightning Talks (Monday)
 LOCATION:Junior Ballroom
@@ -141,9 +141,9 @@ URL:https://2027.djangocon.us/talks/lightning-talks-monday/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T125000
-DTEND;TZID=America/New_York:20240923T133500
-DTSTAMP:20240923T125000Z
+DTSTART;TZID=America/Los_Angeles:20240923T095000
+DTEND;TZID=America/Los_Angeles:20240923T103500
+DTSTAMP:20240923T095000Z
 UID:project-management-in-open-source@https://2027.djangocon.us
 SUMMARY:Project Management in Open Source
 LOCATION:Online talks
@@ -160,9 +160,9 @@ URL:https://2027.djangocon.us/talks/project-management-in-open-source/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T134000
-DTEND;TZID=America/New_York:20240923T142500
-DTSTAMP:20240923T134000Z
+DTSTART;TZID=America/Los_Angeles:20240923T104000
+DTEND;TZID=America/Los_Angeles:20240923T112500
+DTSTAMP:20240923T104000Z
 UID:an-opinionated-guide-to-modern-django-forms@https://2027.djangocon.us
 SUMMARY:An Opinionated Guide to Modern Django Forms
 LOCATION:Grand Ballroom III
@@ -172,9 +172,9 @@ URL:https://2027.djangocon.us/talks/an-opinionated-guide-to-modern-django-forms/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T134000
-DTEND;TZID=America/New_York:20240923T142500
-DTSTAMP:20240923T134000Z
+DTSTART;TZID=America/Los_Angeles:20240923T104000
+DTEND;TZID=America/Los_Angeles:20240923T112500
+DTSTAMP:20240923T104000Z
 UID:troubleshooting-is-a-lifestyle@https://2027.djangocon.us
 SUMMARY:Troubleshooting is a Lifestyle 😎
 LOCATION:Junior Ballroom
@@ -203,9 +203,9 @@ URL:https://2027.djangocon.us/talks/troubleshooting-is-a-lifestyle/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T143000
-DTEND;TZID=America/New_York:20240923T145500
-DTSTAMP:20240923T143000Z
+DTSTART;TZID=America/Los_Angeles:20240923T113000
+DTEND;TZID=America/Los_Angeles:20240923T115500
+DTSTAMP:20240923T113000Z
 UID:a-related-matter-optimizing-your-webapp-by-using-django-debug-toolbar-select-related-and-prefetch-related@https://2027.djangocon.us
 SUMMARY:A Related Matter: Optimizing your webapp by using django-debug-toolbar, select_related(), and prefetch_related()
 LOCATION:Junior Ballroom
@@ -219,9 +219,9 @@ URL:https://2027.djangocon.us/talks/a-related-matter-optimizing-your-webapp-by-u
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T143000
-DTEND;TZID=America/New_York:20240923T145500
-DTSTAMP:20240923T143000Z
+DTSTART;TZID=America/Los_Angeles:20240923T113000
+DTEND;TZID=America/Los_Angeles:20240923T115500
+DTSTAMP:20240923T113000Z
 UID:open-source-python-tools-to-visualize-and-analyse-geospatial-data@https://2027.djangocon.us
 SUMMARY:Open-source Python tools to visualize and analyse geospatial data.
 LOCATION:Grand Ballroom III
@@ -233,9 +233,9 @@ URL:https://2027.djangocon.us/talks/open-source-python-tools-to-visualize-and-an
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T150000
-DTEND;TZID=America/New_York:20240923T152500
-DTSTAMP:20240923T150000Z
+DTSTART;TZID=America/Los_Angeles:20240923T120000
+DTEND;TZID=America/Los_Angeles:20240923T122500
+DTSTAMP:20240923T120000Z
 UID:empowering-tertiary-students-introducing-pyclubs-for-enhanced-python-skills-and-community-engagement@https://2027.djangocon.us
 SUMMARY:Empowering Tertiary Students: Introducing PyClubs for Enhanced Python Skills and Community Engagement
 LOCATION:Online talks
@@ -247,9 +247,9 @@ URL:https://2027.djangocon.us/talks/empowering-tertiary-students-introducing-pyc
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T153000
-DTEND;TZID=America/New_York:20240923T161500
-DTSTAMP:20240923T153000Z
+DTSTART;TZID=America/Los_Angeles:20240923T123000
+DTEND;TZID=America/Los_Angeles:20240923T131500
+DTSTAMP:20240923T123000Z
 UID:passkeys-your-password-free-future@https://2027.djangocon.us
 SUMMARY:Passkeys: Your password-free future
 LOCATION:Grand Ballroom III
@@ -262,9 +262,9 @@ URL:https://2027.djangocon.us/talks/passkeys-your-password-free-future/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T153000
-DTEND;TZID=America/New_York:20240923T161500
-DTSTAMP:20240923T153000Z
+DTSTART;TZID=America/Los_Angeles:20240923T123000
+DTEND;TZID=America/Los_Angeles:20240923T131500
+DTSTAMP:20240923T123000Z
 UID:product-101-for-techies-and-tech-teams@https://2027.djangocon.us
 SUMMARY:Product 101 for Techies and Tech Teams
 LOCATION:Junior Ballroom
@@ -274,9 +274,9 @@ URL:https://2027.djangocon.us/talks/product-101-for-techies-and-tech-teams/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T162000
-DTEND;TZID=America/New_York:20240923T164500
-DTSTAMP:20240923T162000Z
+DTSTART;TZID=America/Los_Angeles:20240923T132000
+DTEND;TZID=America/Los_Angeles:20240923T134500
+DTSTAMP:20240923T132000Z
 UID:one-thousand-and-one-django-sites@https://2027.djangocon.us
 SUMMARY:One Thousand and One Django Sites
 LOCATION:Grand Ballroom III
@@ -286,9 +286,9 @@ URL:https://2027.djangocon.us/talks/one-thousand-and-one-django-sites/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T162000
-DTEND;TZID=America/New_York:20240923T164500
-DTSTAMP:20240923T162000Z
+DTSTART;TZID=America/Los_Angeles:20240923T132000
+DTEND;TZID=America/Los_Angeles:20240923T134500
+DTSTAMP:20240923T132000Z
 UID:the-art-of-not-redirecting@https://2027.djangocon.us
 SUMMARY:The art of (not) redirecting
 LOCATION:Junior Ballroom
@@ -298,9 +298,9 @@ URL:https://2027.djangocon.us/talks/the-art-of-not-redirecting/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T165000
-DTEND;TZID=America/New_York:20240923T171500
-DTSTAMP:20240923T165000Z
+DTSTART;TZID=America/Los_Angeles:20240923T135000
+DTEND;TZID=America/Los_Angeles:20240923T141500
+DTSTAMP:20240923T135000Z
 UID:django-the-web-framework-that-changed-my-life@https://2027.djangocon.us
 SUMMARY:Django: the web framework that changed my life
 LOCATION:Junior Ballroom
@@ -318,9 +318,9 @@ URL:https://2027.djangocon.us/talks/django-the-web-framework-that-changed-my-lif
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T165000
-DTEND;TZID=America/New_York:20240923T171500
-DTSTAMP:20240923T165000Z
+DTSTART;TZID=America/Los_Angeles:20240923T135000
+DTEND;TZID=America/Los_Angeles:20240923T141500
+DTSTAMP:20240923T135000Z
 UID:pygoat-learn-django-security-the-hard-way@https://2027.djangocon.us
 SUMMARY:Pygoat - Learn django security the hard way
 LOCATION:Grand Ballroom III
@@ -330,9 +330,9 @@ URL:https://2027.djangocon.us/talks/pygoat-learn-django-security-the-hard-way/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240923T172000
-DTEND;TZID=America/New_York:20240923T174500
-DTSTAMP:20240923T172000Z
+DTSTART;TZID=America/Los_Angeles:20240923T142000
+DTEND;TZID=America/Los_Angeles:20240923T144500
+DTSTAMP:20240923T142000Z
 UID:unlocking-performance-benchmarking-and-profiling-django-for-maximum-efficiency@https://2027.djangocon.us
 SUMMARY:Unlocking Performance: Benchmarking and profiling Django for Maximum Efficiency
 LOCATION:Online talks
@@ -343,9 +343,9 @@ URL:https://2027.djangocon.us/talks/unlocking-performance-benchmarking-and-profi
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T090000
-DTEND;TZID=America/New_York:20240924T091500
-DTSTAMP:20240924T090000Z
+DTSTART;TZID=America/Los_Angeles:20240924T060000
+DTEND;TZID=America/Los_Angeles:20240924T061500
+DTSTAMP:20240924T060000Z
 UID:opening-remarks-tuesday@https://2027.djangocon.us
 SUMMARY:Opening Remarks (Tuesday)
 LOCATION:Junior Ballroom
@@ -355,9 +355,9 @@ URL:https://2027.djangocon.us/talks/opening-remarks-tuesday/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T091500
-DTEND;TZID=America/New_York:20240924T100000
-DTSTAMP:20240924T091500Z
+DTSTART;TZID=America/Los_Angeles:20240924T061500
+DTEND;TZID=America/Los_Angeles:20240924T070000
+DTSTAMP:20240924T061500Z
 UID:keynote-mario-munoz@https://2027.djangocon.us
 SUMMARY:Keynote - How To Be A Developer and Other Lies We Tell Ourselves
 LOCATION:Junior Ballroom
@@ -369,9 +369,9 @@ URL:https://2027.djangocon.us/talks/keynote-tuesday/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T101000
-DTEND;TZID=America/New_York:20240924T103500
-DTSTAMP:20240924T101000Z
+DTSTART;TZID=America/Los_Angeles:20240924T071000
+DTEND;TZID=America/Los_Angeles:20240924T073500
+DTSTAMP:20240924T071000Z
 UID:seamless-transition-how-i-converted-an-existing-mysql-database-to-be-fully-managed-by-django-migrations-framework@https://2027.djangocon.us
 SUMMARY:Seamless Transition: How I Converted an Existing MySQL Database to be Fully Managed by Django Migrations Framework
 LOCATION:Online talks
@@ -388,9 +388,9 @@ URL:https://2027.djangocon.us/talks/seamless-transition-how-i-converted-an-exist
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T104000
-DTEND;TZID=America/New_York:20240924T112500
-DTSTAMP:20240924T104000Z
+DTSTART;TZID=America/Los_Angeles:20240924T074000
+DTEND;TZID=America/Los_Angeles:20240924T082500
+DTSTAMP:20240924T074000Z
 UID:django-alpine-js-htmx-ups-downs@https://2027.djangocon.us
 SUMMARY:Django + Alpine.js + htmx Ups & Downs
 LOCATION:Junior Ballroom
@@ -406,9 +406,9 @@ URL:https://2027.djangocon.us/talks/django-alpine-js-htmx-ups-downs/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T104000
-DTEND;TZID=America/New_York:20240924T112500
-DTSTAMP:20240924T104000Z
+DTSTART;TZID=America/Los_Angeles:20240924T074000
+DTEND;TZID=America/Los_Angeles:20240924T082500
+DTSTAMP:20240924T074000Z
 UID:postgresql-beyond-django-strategies-to-get-max-performance@https://2027.djangocon.us
 SUMMARY:PostgreSQL Beyond Django: Strategies to Get Max Performance
 LOCATION:Grand Ballroom III
@@ -428,9 +428,9 @@ URL:https://2027.djangocon.us/talks/postgresql-beyond-django-strategies-to-get-m
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T113000
-DTEND;TZID=America/New_York:20240924T115500
-DTSTAMP:20240924T113000Z
+DTSTART;TZID=America/Los_Angeles:20240924T083000
+DTEND;TZID=America/Los_Angeles:20240924T085500
+DTSTAMP:20240924T083000Z
 UID:if-we-had-1000000-what-could-the-dsf-do-with-4x-its-budget@https://2027.djangocon.us
 SUMMARY:If We Had $1,000,000: What Could The DSF Do With 4x Its Budget?
 LOCATION:Junior Ballroom
@@ -442,9 +442,9 @@ URL:https://2027.djangocon.us/talks/if-we-had-1000000-what-could-the-dsf-do-with
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T113000
-DTEND;TZID=America/New_York:20240924T115500
-DTSTAMP:20240924T113000Z
+DTSTART;TZID=America/Los_Angeles:20240924T083000
+DTEND;TZID=America/Los_Angeles:20240924T085500
+DTSTAMP:20240924T083000Z
 UID:maps-with-django@https://2027.djangocon.us
 SUMMARY:Maps with Django
 LOCATION:Grand Ballroom III
@@ -457,9 +457,9 @@ URL:https://2027.djangocon.us/talks/maps-with-django/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T120000
-DTEND;TZID=America/New_York:20240924T125000
-DTSTAMP:20240924T120000Z
+DTSTART;TZID=America/Los_Angeles:20240924T090000
+DTEND;TZID=America/Los_Angeles:20240924T095000
+DTSTAMP:20240924T090000Z
 UID:lightning-talks-tuesday@https://2027.djangocon.us
 SUMMARY:Lightning Talks (Tuesday)
 LOCATION:Junior Ballroom
@@ -468,9 +468,9 @@ URL:https://2027.djangocon.us/talks/lightning-talks-tuesday/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T125000
-DTEND;TZID=America/New_York:20240924T133500
-DTSTAMP:20240924T125000Z
+DTSTART;TZID=America/Los_Angeles:20240924T095000
+DTEND;TZID=America/Los_Angeles:20240924T103500
+DTSTAMP:20240924T095000Z
 UID:upgrading-eol-django-a-journey-from-v1-to-v5@https://2027.djangocon.us
 SUMMARY:Upgrading EOL Django: A Journey from V1 to V5
 LOCATION:Online talks
@@ -487,9 +487,9 @@ URL:https://2027.djangocon.us/talks/upgrading-eol-django-a-journey-from-v1-to-v5
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T134000
-DTEND;TZID=America/New_York:20240924T142500
-DTSTAMP:20240924T134000Z
+DTSTART;TZID=America/Los_Angeles:20240924T104000
+DTEND;TZID=America/Los_Angeles:20240924T112500
+DTSTAMP:20240924T104000Z
 UID:finding-2-0@https://2027.djangocon.us
 SUMMARY:Finding 2.0
 LOCATION:Junior Ballroom
@@ -501,13 +501,13 @@ URL:https://2027.djangocon.us/talks/finding-2-0/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T134000
-DTEND;TZID=America/New_York:20240924T142500
-DTSTAMP:20240924T134000Z
+DTSTART;TZID=America/Los_Angeles:20240924T104000
+DTEND;TZID=America/Los_Angeles:20240924T112500
+DTSTAMP:20240924T104000Z
 UID:lessons-from-e2e-testing-web-applications@https://2027.djangocon.us
 SUMMARY:Lessons from E2E Testing Web Applications
 LOCATION:Grand Ballroom III
-DESCRIPTION:Presenter: Avindra Fernando\n\nLots of companies are investing in end to end testing to release high quality software and remain competitive in today’s market. Now with libraries like Cypress and Playwright, end to end testing web applications have become very intuitive and a whole lot of fun.
+DESCRIPTION:Presenter: Avindra Fernando\n\nLots of companies are investing in end to end testing to release high quality software and remain competitive in today’s market. Now with libraries like Cypress and Playwright, end to end testing web applications have become very intuitive and a whole lot of fun.  
  Over the years, after working with these tools, there are many lessons that I have learned the hard way. These valuable lessons taught me how to write robust and reliable tests that vastly improved the quality of my applications.
  In this session, let's discuss best practices that I found useful to write E2E tests. These guidelines will enable you to release high quality software to your clients.
  
@@ -515,9 +515,9 @@ URL:https://2027.djangocon.us/talks/lessons-from-e2e-testing-web-applications/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T143000
-DTEND;TZID=America/New_York:20240924T145500
-DTSTAMP:20240924T143000Z
+DTSTART;TZID=America/Los_Angeles:20240924T113000
+DTEND;TZID=America/Los_Angeles:20240924T115500
+DTSTAMP:20240924T113000Z
 UID:only-reliable-data-protecting-database-integrity@https://2027.djangocon.us
 SUMMARY:Only reliable Data: Protecting Database Integrity
 LOCATION:Grand Ballroom III
@@ -533,9 +533,9 @@ URL:https://2027.djangocon.us/talks/only-reliable-data-protecting-database-integ
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T143000
-DTEND;TZID=America/New_York:20240924T145500
-DTSTAMP:20240924T143000Z
+DTSTART;TZID=America/Los_Angeles:20240924T113000
+DTEND;TZID=America/Los_Angeles:20240924T115500
+DTSTAMP:20240924T113000Z
 UID:you-got-that-nice-tech-salary-now-what@https://2027.djangocon.us
 SUMMARY:You got that nice tech salary, now what?
 LOCATION:Junior Ballroom
@@ -548,9 +548,9 @@ URL:https://2027.djangocon.us/talks/you-got-that-nice-tech-salary-now-what/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T150000
-DTEND;TZID=America/New_York:20240924T152500
-DTSTAMP:20240924T150000Z
+DTSTART;TZID=America/Los_Angeles:20240924T120000
+DTEND;TZID=America/Los_Angeles:20240924T122500
+DTSTAMP:20240924T120000Z
 UID:level-up-your-django-performance-identifying-and-taming-n-1-queries@https://2027.djangocon.us
 SUMMARY:Level Up Your Django Performance: Identifying and Taming N+1 Queries
 LOCATION:Online talks
@@ -561,9 +561,9 @@ URL:https://2027.djangocon.us/talks/level-up-your-django-performance-identifying
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T153000
-DTEND;TZID=America/New_York:20240924T161500
-DTSTAMP:20240924T153000Z
+DTSTART;TZID=America/Los_Angeles:20240924T123000
+DTEND;TZID=America/Los_Angeles:20240924T131500
+DTSTAMP:20240924T123000Z
 UID:how-to-design-and-implement-extensible-software-with-plugins@https://2027.djangocon.us
 SUMMARY:How to design and implement extensible software with plugins
 LOCATION:Junior Ballroom
@@ -582,9 +582,9 @@ URL:https://2027.djangocon.us/talks/how-to-design-and-implement-extensible-softw
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T153000
-DTEND;TZID=America/New_York:20240924T161500
-DTSTAMP:20240924T153000Z
+DTSTART;TZID=America/Los_Angeles:20240924T123000
+DTEND;TZID=America/Los_Angeles:20240924T131500
+DTSTAMP:20240924T123000Z
 UID:optimizing-remote-work-pull-requests-stand-ups-and-emojis@https://2027.djangocon.us
 SUMMARY:Optimizing remote work: Pull Requests, Stand-ups, and emojis
 LOCATION:Grand Ballroom III
@@ -595,9 +595,9 @@ URL:https://2027.djangocon.us/talks/optimizing-remote-work-pull-requests-stand-u
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T162000
-DTEND;TZID=America/New_York:20240924T164500
-DTSTAMP:20240924T162000Z
+DTSTART;TZID=America/Los_Angeles:20240924T132000
+DTEND;TZID=America/Los_Angeles:20240924T134500
+DTSTAMP:20240924T132000Z
 UID:deploying-django-migrations-at-kraken-scale@https://2027.djangocon.us
 SUMMARY:Deploying Django migrations at Kraken scale
 LOCATION:Grand Ballroom III
@@ -608,9 +608,9 @@ URL:https://2027.djangocon.us/talks/deploying-django-migrations-at-kraken-scale/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T162000
-DTEND;TZID=America/New_York:20240924T164500
-DTSTAMP:20240924T162000Z
+DTSTART;TZID=America/Los_Angeles:20240924T132000
+DTEND;TZID=America/Los_Angeles:20240924T134500
+DTSTAMP:20240924T132000Z
 UID:faster-leaner-greener-10x-lower-website-carbon-emissions@https://2027.djangocon.us
 SUMMARY:Faster, leaner, greener: 10x lower website carbon emissions
 LOCATION:Junior Ballroom
@@ -625,9 +625,9 @@ URL:https://2027.djangocon.us/talks/faster-leaner-greener-10x-lower-website-carb
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T165000
-DTEND;TZID=America/New_York:20240924T171500
-DTSTAMP:20240924T165000Z
+DTSTART;TZID=America/Los_Angeles:20240924T135000
+DTEND;TZID=America/Los_Angeles:20240924T141500
+DTSTAMP:20240924T135000Z
 UID:fighting-homelessness-with-django@https://2027.djangocon.us
 SUMMARY:Fighting Homelessness with Django
 LOCATION:Junior Ballroom
@@ -647,9 +647,9 @@ URL:https://2027.djangocon.us/talks/fighting-homelessness-with-django/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T165000
-DTEND;TZID=America/New_York:20240924T171500
-DTSTAMP:20240924T165000Z
+DTSTART;TZID=America/Los_Angeles:20240924T135000
+DTEND;TZID=America/Los_Angeles:20240924T141500
+DTSTAMP:20240924T135000Z
 UID:operations-the-missing-django-piece@https://2027.djangocon.us
 SUMMARY:Operations: The Missing Django Piece
 LOCATION:Grand Ballroom III
@@ -659,9 +659,9 @@ URL:https://2027.djangocon.us/talks/operations-missing-django-piece/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240924T172000
-DTEND;TZID=America/New_York:20240924T174500
-DTSTAMP:20240924T172000Z
+DTSTART;TZID=America/Los_Angeles:20240924T142000
+DTEND;TZID=America/Los_Angeles:20240924T144500
+DTSTAMP:20240924T142000Z
 UID:reusable-django-template-components-for-perfectionists-with-deadlines@https://2027.djangocon.us
 SUMMARY:Django UI Components for Perfectionists with Deadlines
 LOCATION:Online talks
@@ -673,9 +673,9 @@ URL:https://2027.djangocon.us/talks/reusable-django-template-components-for-perf
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240925T090000
-DTEND;TZID=America/New_York:20240925T091500
-DTSTAMP:20240925T090000Z
+DTSTART;TZID=America/Los_Angeles:20240925T060000
+DTEND;TZID=America/Los_Angeles:20240925T061500
+DTSTAMP:20240925T060000Z
 UID:opening-remarks-wednesday@https://2027.djangocon.us
 SUMMARY:Opening Remarks (Wednesday)
 LOCATION:Junior Ballroom
@@ -684,9 +684,9 @@ URL:https://2027.djangocon.us/talks/opening-remarks-wednesday/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240925T091500
-DTEND;TZID=America/New_York:20240925T100000
-DTSTAMP:20240925T091500Z
+DTSTART;TZID=America/Los_Angeles:20240925T061500
+DTEND;TZID=America/Los_Angeles:20240925T070000
+DTSTAMP:20240925T061500Z
 UID:keynote-natalia-bidart@https://2027.djangocon.us
 SUMMARY:Keynote - The Fellowship of the Pony
 LOCATION:Junior Ballroom
@@ -697,9 +697,9 @@ URL:https://2027.djangocon.us/talks/keynote-wednesday/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240925T101000
-DTEND;TZID=America/New_York:20240925T103500
-DTSTAMP:20240925T101000Z
+DTSTART;TZID=America/Los_Angeles:20240925T071000
+DTEND;TZID=America/Los_Angeles:20240925T073500
+DTSTAMP:20240925T071000Z
 UID:introduction-to-opentelemetry-with-django@https://2027.djangocon.us
 SUMMARY:Introduction to OpenTelemetry with Django
 LOCATION:Online talks
@@ -710,9 +710,9 @@ URL:https://2027.djangocon.us/talks/introduction-to-opentelemetry-with-django/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240925T104000
-DTEND;TZID=America/New_York:20240925T112500
-DTSTAMP:20240925T104000Z
+DTSTART;TZID=America/Los_Angeles:20240925T074000
+DTEND;TZID=America/Los_Angeles:20240925T082500
+DTSTAMP:20240925T074000Z
 UID:hidden-gems-of-django-5-x@https://2027.djangocon.us
 SUMMARY:Hidden gems of Django 5.x
 LOCATION:Junior Ballroom
@@ -724,9 +724,9 @@ URL:https://2027.djangocon.us/talks/hidden-gems-of-django-5-x/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240925T113000
-DTEND;TZID=America/New_York:20240925T115500
-DTSTAMP:20240925T113000Z
+DTSTART;TZID=America/Los_Angeles:20240925T083000
+DTEND;TZID=America/Los_Angeles:20240925T085500
+DTSTAMP:20240925T083000Z
 UID:a-brief-history-of-django@https://2027.djangocon.us
 SUMMARY:A Brief History of Django
 LOCATION:Junior Ballroom
@@ -742,9 +742,9 @@ URL:https://2027.djangocon.us/talks/a-brief-history-of-django/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240925T120000
-DTEND;TZID=America/New_York:20240925T125000
-DTSTAMP:20240925T120000Z
+DTSTART;TZID=America/Los_Angeles:20240925T090000
+DTEND;TZID=America/Los_Angeles:20240925T095000
+DTSTAMP:20240925T090000Z
 UID:lightning-talks-wednesday@https://2027.djangocon.us
 SUMMARY:Lightning Talks (Wednesday)
 LOCATION:Junior Ballroom
@@ -753,9 +753,9 @@ URL:https://2027.djangocon.us/talks/lightning-talks-wednesday/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240925T125000
-DTEND;TZID=America/New_York:20240925T133500
-DTSTAMP:20240925T125000Z
+DTSTART;TZID=America/Los_Angeles:20240925T095000
+DTEND;TZID=America/Los_Angeles:20240925T103500
+DTSTAMP:20240925T095000Z
 UID:django-celery-a-love-story-of-async-proportions@https://2027.djangocon.us
 SUMMARY:Django & Celery: A love story of async proportions
 LOCATION:Online talks
@@ -787,9 +787,9 @@ URL:https://2027.djangocon.us/talks/django-celery-a-love-story-of-async-proporti
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240925T134000
-DTEND;TZID=America/New_York:20240925T142500
-DTSTAMP:20240925T134000Z
+DTSTART;TZID=America/Los_Angeles:20240925T104000
+DTEND;TZID=America/Los_Angeles:20240925T112500
+DTSTAMP:20240925T104000Z
 UID:webrtc-with-django-channels-htmx-and-coturn@https://2027.djangocon.us
 SUMMARY:WebRTC with Django, Channels, HTMX, and coturn
 LOCATION:Junior Ballroom
@@ -801,9 +801,9 @@ URL:https://2027.djangocon.us/talks/webrtc-with-django-channels-htmx-and-coturn/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240925T143000
-DTEND;TZID=America/New_York:20240925T145500
-DTSTAMP:20240925T143000Z
+DTSTART;TZID=America/Los_Angeles:20240925T113000
+DTEND;TZID=America/Los_Angeles:20240925T115500
+DTSTAMP:20240925T113000Z
 UID:a-guided-tour-through-postgres-internals@https://2027.djangocon.us
 SUMMARY:A Guided Tour Through Postgres Internals
 LOCATION:Junior Ballroom
@@ -813,9 +813,9 @@ URL:https://2027.djangocon.us/talks/a-guided-tour-through-postgres-internals/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240925T150000
-DTEND;TZID=America/New_York:20240925T152500
-DTSTAMP:20240925T150000Z
+DTSTART;TZID=America/Los_Angeles:20240925T120000
+DTEND;TZID=America/Los_Angeles:20240925T122500
+DTSTAMP:20240925T120000Z
 UID:streaming-video-in-django-demystified@https://2027.djangocon.us
 SUMMARY:Streaming Video in Django | Demystified
 LOCATION:Online talks
@@ -867,9 +867,9 @@ URL:https://2027.djangocon.us/talks/streaming-video-in-django-demystified/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240925T153000
-DTEND;TZID=America/New_York:20240925T155500
-DTSTAMP:20240925T153000Z
+DTSTART;TZID=America/Los_Angeles:20240925T123000
+DTEND;TZID=America/Los_Angeles:20240925T125500
+DTSTAMP:20240925T123000Z
 UID:django-user-model-past-present-and-future@https://2027.djangocon.us
 SUMMARY:Django User Model: Past, Present, and Future
 LOCATION:Junior Ballroom
@@ -879,9 +879,9 @@ URL:https://2027.djangocon.us/talks/django-user-model-past-present-and-future/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240925T160000
-DTEND;TZID=America/New_York:20240925T162500
-DTSTAMP:20240925T160000Z
+DTSTART;TZID=America/Los_Angeles:20240925T130000
+DTEND;TZID=America/Los_Angeles:20240925T132500
+DTSTAMP:20240925T130000Z
 UID:api-maybe-bootstrapping-a-web-application-circa-2024@https://2027.djangocon.us
 SUMMARY:API Maybe: Bootstrapping a Web Application circa 2024
 LOCATION:Junior Ballroom
@@ -894,9 +894,9 @@ URL:https://2027.djangocon.us/talks/api-maybe-bootstrapping-a-web-application-ci
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240925T163000
-DTEND;TZID=America/New_York:20240925T171500
-DTSTAMP:20240925T163000Z
+DTSTART;TZID=America/Los_Angeles:20240925T133000
+DTEND;TZID=America/Los_Angeles:20240925T141500
+DTSTAMP:20240925T133000Z
 UID:panel-discussion-django-communities@https://2027.djangocon.us
 SUMMARY:Panel Discussion: Open, friendly, and welcoming: on the history and future of mentoring in Django
 LOCATION:Junior Ballroom
@@ -918,9 +918,9 @@ URL:https://2027.djangocon.us/talks/panel-discussion-mentoring-django/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20240925T172000
-DTEND;TZID=America/New_York:20240925T174000
-DTSTAMP:20240925T172000Z
+DTSTART;TZID=America/Los_Angeles:20240925T142000
+DTEND;TZID=America/Los_Angeles:20240925T144000
+DTSTAMP:20240925T142000Z
 UID:closing-remarks@https://2027.djangocon.us
 SUMMARY:Closing Remarks
 LOCATION:Junior Ballroom
