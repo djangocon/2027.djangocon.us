@@ -7,7 +7,8 @@ const setupSessions = require('./lib/sessions');
 const setupFeed = require('./lib/feed');
 const markdown = require('./lib/markdown');
 
-const { formatInTimeZone } = require('date-fns-tz');
+const { format } = require('date-fns');
+const { TZDate } = require('@date-fns/tz');
 
 // Read timezone from site.json
 const siteConfig = require('./src/_data/site.json');
@@ -26,10 +27,13 @@ module.exports = (config) => {
   config.addPassthroughCopy("src/assets/js/");
   config.addPassthroughCopy("src/assets/gpx/*");
   config.addPassthroughCopy("src/assets/favicons/");
+  config.addPassthroughCopy("src/assets/fonts/");
+  config.addPassthroughCopy("src/assets/pdf/");
   config.addPassthroughCopy({
     "src/_content/sponsors/*.{png,jpg,jpeg,webp,svg}": "sponsors/",
     "src/_content/places/*.{png,jpg,jpeg,webp,svg}": "venue/",
   });
+  config.addPassthroughCopy("src/manifest.webmanifest");
   config.addPassthroughCopy("CNAME");
   config.addPassthroughCopy("ROBOTS.txt");
   config.addPassthroughCopy(".nojekyll");
@@ -87,8 +91,13 @@ module.exports = (config) => {
     return markdown.render(content);
   });
 
-  config.addFilter("formatDateTime", function(date, format) {
-    return formatInTimeZone(date, timezone, format);
+  config.addFilter("formatDateTime", function(date, formatStr) {
+    // Handle date-only strings (e.g., "2026-08-24") by adding noon time
+    // to avoid timezone day-boundary issues
+    if (typeof date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(date)) {
+      date = `${date}T12:00:00`;
+    }
+    return format(new TZDate(date, timezone), formatStr);
   });
 
   config.addFilter("find", function find(collection = [], slug = "") {
@@ -100,13 +109,11 @@ module.exports = (config) => {
     return collection.filter(item => item.data.presenter_slugs.includes(slug));
   });
 
-  // Only build pages that aren't marked as drafts in production
-  // In development mode, draft pages are built for preview purposes
-  // Usage: draft: true
+  // Only build pages that aren't marked as drafts, usage below
+  // draft: true
   config.addGlobalData("eleventyComputed.permalink", function() {
     return (data) => {
-      // In production, exclude draft pages
-      if (data.draft && process.env.NODE_ENV === 'production') {
+      if (data.draft) {
         return false;
       }
 
