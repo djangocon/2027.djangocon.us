@@ -18,9 +18,10 @@
   "opportunity_grant_application": "",
   "slack_link": "",
   "sponsorship_prospectus": "",
-  "ticket_link": "",
+  "ticket_link": "https://ti.to/defna/djangocon-us-2027",
   "photos_link": "",
   "youtube_link": "",
+  "conference_dates": "September 12-17, 2027",
 
   "social": {
     "flickr": "https://flickr.com/photos/djangocon/albums/",
