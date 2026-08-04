@@ -1,0 +1,46 @@
+.index-hero {
+  @apply relative z-50;
+  background-image: url('/assets/img/2026/yellow-metro.svg');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: -10% 100%;
+
+  @screen lg {
+    background-image: url('/assets/img/2026/yellow-metro.svg'), url('/assets/img/2026/red-metro.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 100%, right 100%;
+    background-size: auto;
+  }
+}
+
+.index-wrapper {
+  @apply relative;
+  @apply flex justify-center px-4 pt-[8rem];
+  @apply lg:justify-start lg:pt-0;
+}
+
+.index-wrapper-texture {
+  @apply absolute inset-0;
+  @apply bg-[url('/assets/img/2026/texture.jpg')] bg-center bg-no-repeat bg-cover;
+  @apply opacity-40;
+  background-blend-mode: lighten;
+}
+
+.featured-news-card {
+  @apply flex flex-col;
+  @apply p-6;
+  @apply bg-white rounded-2xl border border-stroke;
+}
+
+.index-hero-stats {
+  @apply text-center mt-[20rem];
+  @apply lg:mt-0;
+
+  span {
+    @apply block;
+    @apply font-tanker text-orange text-6xl;
+    -webkit-text-stroke: 3px theme("colors.dark-blue");
+    paint-order: stroke fill;
+    text-shadow: 4px -4px 0px theme("colors.dark-blue");
+  }
+}

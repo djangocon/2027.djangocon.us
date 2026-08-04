@@ -1,8 +1,12 @@
 
 
 .wrapper {
-  @apply max-w-screen-xl;
-  @apply px-6 mx-auto sm:px-8;
+  @apply max-w-screen-xl mx-auto px-6;
+  @apply sm:px-8;
+
+  & > .prose {
+    max-width: none;
+  }
 }
 
 .wrapper.narrow {
@@ -18,7 +22,7 @@
 }
 
 .block-container {
-  @apply py-6;
+  @apply py-8;
 }
 
 @screen md {
@@ -29,7 +33,7 @@
 
 @screen lg {
   .block-container {
-    @apply py-14;
+    @apply py-16;
   }
 
   .hero {
