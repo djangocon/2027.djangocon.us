@@ -1,0 +1,22 @@
+.banner {
+  @apply gap-4;
+  @apply border-4 border-background rounded-xl bg-background;
+  @apply md:grid md:grid-cols-2;
+
+  & > div {
+    @apply p-3;
+  }
+
+  aside {
+    @apply p-3;
+    @apply rounded-lg;
+  }
+
+  p {
+    @apply mb-6;
+
+    &:last-of-type {
+      @apply mb-0;
+    }
+  }
+}

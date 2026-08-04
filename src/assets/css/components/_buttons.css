@@ -1,27 +1,27 @@
-.button {
-  @apply relative inline-flex items-center justify-center px-3 py-2 rounded-md;
-  @apply border-2;
-  @apply font-semibold text-base !no-underline;
+@layer components {
+  .button {
+    @apply relative;
+    @apply inline-flex self-center items-center;
+    @apply py-3 px-4 gap-2.5;
+    @apply font-tanker leading-none text-dark-blue text-center text-nowrap uppercase !no-underline;
+    @apply border-[3px] rounded-full border-dark-blue shadow-button;
+    @apply transition-all duration-[125ms] ease-out;
+  }
 
-  border-color: var(--theme-text-color);
+  .button:hover {
+    @apply shadow-button-hover bg-ocean-blue-400;
+  }
 
-  /* THEME-X */
-  @apply border-b-4 border-r-4;
+  .button:active {
+    @apply shadow-button-active;
+  }
 
-  background: linear-gradient(to bottom, transparent 50%, theme('colors.yellow.DEFAULT') 50%);
-  background-size: 100% 200%;
-  background-position: top;
-  transition: all .125s ease-out;
-}
+  .button-lg {
+    @apply px-6;
+    @apply text-xl;
+  }
 
-.button:hover {
-  background-position: bottom;
-}
-
-.button-lg {
-  @apply px-5 py-2 text-xl;
-}
-
-.button-group {
-  @apply flex flex-col flex-wrap items-center gap-4 sm:flex-row;
+  .button-group {
+    @apply flex flex-wrap items-center gap-4 flex-row;
+  }
 }

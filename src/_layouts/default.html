@@ -59,28 +59,8 @@
   {% if current_phase != "landing" %}
     <img src="/assets/img/theme/city.svg" alt="The city skyline" aria-hidden="true" class="mt-16 -mb-[4vw]"/>
   {% endif %}
-  <footer id="SiteFooter" class="py-20 bg-white border-t-4 border-black">
-    <div class="container mx-auto ">
-      <div class="grid gap-8 px-4 place-items-center">
-        {% include "conf-social-share.html" %}
-
-        <p class="text-center lg:text-xl">
-          <strong>
-            Got questions? We can help:
-            <a
-              href="mailto:{{site.contact_us_email}}" class="link">{{site.contact_us_email}}</a>
-          </strong>
-        </p>
-        <small class="text-sm text-center">
-          &copy; {{ site.conf_year }} DjangoCon US
-          · Design by <a href="https://yupgup.com/" class="link" target="_blank">YupGup</a>
-          · Presented by <a href="https://www.defna.org/" class="link" target="_blank">DEFNA</a>
-          {% if current_phase != "landing" %}· <a href="/styleguide/">Styleguide</a>{% endif %}
-          {%- comment -%}· <a href="/colophon/" class="link">Colophon</a>{%- endcomment -%}
-        </small>
-      </div>
-    </div>
-  </footer>
+  
+  {% include "footer.html" %}
 
   {%- comment -%}
     Social icons added as sprite

@@ -1,50 +1,29 @@
-{% comment %}
-  Unified header component for all conference phases.
-  Supports optional `preview_phase` variable for phase preview pages.
-{% endcomment %}
-
-{% assign current_phase = preview_phase | default: site.phase %}
-
-{% if current_phase == "active" and site.banner %}
-<aside class="fixed lg:relative lg:py-6 text-center justify-around leading-tight h-[40px] xl:text-lg z-[200] top-0 block bg-red text-white flex items-center justify-center px-4 w-full">
-  <a href="/schedule" class="hidden text-white no-underline md:inline-flex">
-   🎉 &nbsp; <strong class="underline">Welcome to Durham!</strong> &nbsp; 🎉
-  </a>
-  <a href="{{ site.ticket_link }}" class="text-white no-underline">
-     🎫  &nbsp;<strong class="underline">Tickets Still Available!</strong>&nbsp; 🎫
-  </a>
+{% if site.banner %}
+<aside class="fixed top-0 z-[200] flex items-center justify-around w-full h-[40px] px-4 lg:relative lg:py-6 text-center text-white leading-tight bg-orange">
+  <!-- <a href="/schedule" class="hidden text-white no-underline md:inline-flex">
+    🎉 &nbsp; <strong class="underline">Welcome to Chicago!</strong> &nbsp; 🎉
+  </a> -->
+  <!-- <a href="{{ site.ticket_link }}" class="text-white no-underline" target="_blank" rel="noopener noreferrer">
+    🎫 &nbsp; Early bird tickets available through May 31st&nbsp; 🎫
+  </a> -->
 </aside>
 {% endif %}
 
-<header id="SiteHeader" class="{% if current_phase == 'landing' %}fixed top-0 z-40 w-full py-4 bg-white lg:py-6 lg:relative{% else %}relative w-full py-4 lg:py-6{% endif %}">
-  <div class="wrapper">
-    <nav class="flex flex-wrap" role="navigation">
-      <div class="flex items-center justify-between w-full lg:max-w-max lg:flex-1">
-        <a href="/" aria-label="Go to homepage"{% if current_phase == 'archived' %} class="fill-white"{% endif %}>
-          <img
-            src="/assets/img/theme/logo.svg"
-            alt="DjangoCon US"
-            class="{% if current_phase == 'landing' %}h-12 lg:h-20{% else %}h-16 h-11 xl:h-24{% endif %}">
-        </a>
-        {% unless current_phase == 'landing' %}
-        <button id="NavToggler" class="{% if current_phase == 'archived' %}p-2 bg-white lg:hidden{% else %}site-nav-toggler is-closed{% endif %}">
-          {% if current_phase == 'active' %}<span aria-hidden="true" class="hidden xs:block">Menu</span>{% endif %}
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8{% if current_phase == 'active' %} icon-menu{% endif %}" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-          {% if current_phase == 'active' %}
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 icon-close" aria-hidden="true">
-            <path d="M6 6L17.6673 17.6673" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M6 18L17.6673 6.33274" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          {% endif %}
-          <span class="sr-only">Toggle navigation</span>
-        </button>
-        {% endunless %}
-      </div>
-      {% unless current_phase == 'landing' %}
-      {% include "nav.html" %}
-      {% endunless %}
-    </nav>
+<header id="SiteHeader" class="{% if site.banner %}top-[40px]{% endif %} site-header is-closed lg:is-open lg:top-0">
+  <div class="wrapper relative">
+    <a href="/" aria-label="Go to homepage">
+      <img src="/assets/img/theme/logo.svg" alt="DjangoCon US" class="h-[3.5rem]">
+    </a>
+
+    {% include "nav.html", class:"is-closed site-nav lg:is-open" %}
+
+    <a href="{{ site.ticket_link }}" target="_blank" rel="noopener noreferrer" class="button hidden lg:block w-full bg-primary justify-self-end">Buy Tickets</a>
+
+    <button id="NavToggler" class="site-nav-toggler is-closed">
+      <svg class="w-[18px]" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 2.66667V0H24V2.66667H0ZM0 18.6667V16H24V18.6667H0ZM0 10.6667V8H24V10.6667H0Z" fill="currentColor"/>
+      </svg>
+      <span aria-hidden="true" class="hidden xs:block">Menu</span>
+    </button>
   </div>
 </header>
