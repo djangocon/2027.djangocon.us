@@ -112,6 +112,12 @@
   room: Grand Ballroom I/II
   title: Break (snacks available)
   track: t0
+- start_datetime: 2024-09-24 10:10:00-04:00
+  end_datetime: 2024-09-24 10:20:00-04:00
+  permalink: null
+  room: Grand Ballroom I/II
+  title: Group Photo
+  track: t0
 - start_datetime: 2024-09-24 12:00:00-04:00
   end_datetime: 2024-09-24 12:50:00-04:00
   permalink: /catering-menus/#tuesday-lunch
