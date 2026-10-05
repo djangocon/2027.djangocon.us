@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  {% if noindex %}<meta name="robots" content="noindex, nofollow" />{% endif %}
+
   <link rel="canonical" href="{{ site.domain }}{{ page.url }}" />
   <meta name="author" content="DjangoCon US" />
   <meta name="description" content="{% if description %}{{ description }}{% else %}DjangoCon US {{ site.conf_year }} is a five-day Python and Django conference.{% endif %}" />
@@ -19,7 +21,7 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   {% block social_images %}
-    <meta property="og:image" content="{{ site.domain }}/assets/img/social/og-share.jpg" />
+    <meta property="og:image" content="{{ site.domain }}/assets/img/social/og-share.png" />
     <meta property="twitter:image" content="{{ site.domain }}/assets/img/social/og-share.png" />
   {% endblock %}
 
@@ -43,10 +45,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/assets/css/main.css">
+
+  {% block structured_data %}{% endblock %}
 </head>
 
 {% assign current_phase = preview_phase | default: site.phase %}
 <body id="SiteBody" class="{% if current_phase == 'landing' %}flex flex-col min-h-screen{% endif %}{% if templateClass %} {{ templateClass }}{% endif %}">
+  <a href="#SiteMain" class="sr-only focus:bg-ocean-blue focus:z-[2000] focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:px-4 focus:py-2 focus:text-dark-blue focus:rounded focus:shadow">Skip to main content</a>
+
   {% unless custom_header %}
     {% include "header.html" %}
   {% endunless %}
