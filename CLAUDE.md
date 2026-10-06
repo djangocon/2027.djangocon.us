@@ -1,5 +1,9 @@
 # Claude Code Rules
 
+## Commits and branches
+
+Work in a branch and merge via PR. Branch names lead with the issue number and have no prefixes (`45-roadmap-links`, not `feature/45-roadmap-links` or `issue-45-...`).
+
 ## Tailwind CSS Organization
 
 When writing `@apply` directives, organize classes by category with each category on its own line:
