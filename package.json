@@ -1,5 +1,5 @@
 {
-  "name": "durham.djangocon.us",
+  "name": "2027.djangocon.us",
   "version": "1.0.0",
   "description": "DjangoCon.us conference website built on 11ty",
   "main": "index.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/djangocon/durham.djangocon.us.git"
+    "url": "git+ssh://git@github.com/djangocon/2027.djangocon.us.git"
   },
   "keywords": [
     "django",
@@ -27,9 +27,9 @@
   ],
   "author": "DEFNA",
   "bugs": {
-    "url": "https://github.com/djangocon/2024.djangocon.us/issues"
+    "url": "https://github.com/djangocon/2027.djangocon.us/issues"
   },
-  "homepage": "https://github.com/djangocon/2024.djangocon.us#README",
+  "homepage": "https://github.com/djangocon/2027.djangocon.us#README",
   "dependencies": {
     "@date-fns/tz": "^1.2.0"
   },
@@ -43,7 +43,7 @@
     "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
     "cssnano": "^6.1.0",
-    "date-fns-tz": "^3.2.0",
+    "date-fns": "^4.1.0",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.0.0",
     "markdown-it-anchor": "^9.0.1",
